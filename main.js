@@ -12,8 +12,7 @@ $(document).ready(function(){
 
         const tarefas = $('#tarefa').val()
         const novaTarefa = $("<li></li>")
-        const pendente = $('status')
-        $(`<p class="clickable" id="meuTexto">${tarefas}</p>`).appendTo(novaTarefa)
+        $(`<p>${tarefas}</p>`).appendTo(novaTarefa)
 
         $(novaTarefa).appendTo('ul')
         $(novaTarefa).fadeIn(1000)
@@ -29,15 +28,4 @@ $(document).ready(function(){
     $('#limpar').click(function() {
         $('#listaTextos').empty();
     });
-
-    $('.clickable').click(function() {
-        $(this).toggleClass('concluido');
-        const status = $('#status').text();
-        
-        if (status === 'Pendente') {
-            $('#status').text('Concluído');
-        }
-    });
-
-
 })
