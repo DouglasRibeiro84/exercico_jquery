@@ -15,14 +15,13 @@
         <button type="button">Começar</button>
     </header>
     <form>
-        <input type="text" required placeholder=" Nome da tarefa:"/>
+        <input type="text" id="tarefa" required placeholder=" Nome da tarefa:"/>
         <button type="submit" id="enviar">Enviar</button>
         <button type="reset" id="limpar">Limpar lista</button>
+        <button type="button" id="minimizar">Minimizar</button>
     </form>
-    <ul>
-        <li><a href="">Item a</a></li>
-        <li>Item b</li>
-        <li>Item c</li>
+    <ul id="listaTextos">
+        <li><p class="clickable" id="meuTexto">Clique aqui para mudar o estilo do texto</p></li>
     </ul>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script src="./main.js"></script>
